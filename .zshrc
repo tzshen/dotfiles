@@ -1,6 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="tenzo"
-plugins=(extract fzf git timer z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(fzf git z zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
