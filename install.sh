@@ -12,7 +12,7 @@ function install_darwin() {
 function install_common() {
   local dotfiles
 
-  dotfiles=(.gitconfig .vimrc .zshrc)
+  dotfiles=(.gitconfig .vimrc .zlogin .zshrc)
 
   if [ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -28,6 +28,7 @@ function install_common() {
   done
   vim +PlugInstall +qall
   source ~/.zshrc
+  source ~/.zlogin
 }
 
 case "$OSTYPE" in
