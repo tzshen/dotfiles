@@ -1,5 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="tenzo"
+# ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 plugins=(fzf git z zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
@@ -11,3 +12,5 @@ alias t=trash
 alias te=trash-empty
 alias tl=trash-list
 alias v=vim
+
+# print -Pn "\e]0;\a"
