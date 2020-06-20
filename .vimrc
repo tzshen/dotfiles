@@ -46,7 +46,7 @@ let g:netrw_winsize = 25
 " UI
 language en_US.UTF-8
 set backspace=indent,eol,start
-set clipboard=unnamed,unnamedplus
+set clipboard^=unnamed,unnamedplus
 set cursorline
 set laststatus=2
 set mouse=
