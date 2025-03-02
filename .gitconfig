@@ -1,6 +1,23 @@
-# [user]
-#   name = tzshen
-#   email = tzshen@gmail.com
-# [oh-my-zsh]
-#   hide-status = 0
-#   hide-dirty = 1
+[user]
+  name = tzshen
+  email = tzshen@gmail.com
+[oh-my-zsh]
+  hide-dirty = 1
+[core]
+  editor = vim
+[merge]
+  tool = bcompare
+  conflictStyle = diff3
+[mergetool]
+  prompt = false
+  keepBackup = false
+[mergetool "bcompare"]
+  trustExitCode = true
+  cmd = "/usr/bin/bcompare" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[color]
+  ui = auto
