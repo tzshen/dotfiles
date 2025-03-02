@@ -86,6 +86,7 @@ set autoread
 set encoding=utf-8 fileencodings=utf-8
 set hidden
 set nobackup
+set nofixeol
 set noswapfile
 
 " Key Mappings
